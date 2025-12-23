@@ -1,0 +1,26 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-test-deploy:
+    runs-on: icd-dashboard
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: sudo docker build -t github-action-app .
+
+      - name: Run tests inside Docker
+        run: sudo docker run --rm github-action-app python test_app.py
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        run: |
+          sudo docker rm -f github-action-app || true
+          sudo docker run -d -p 5006:5006 --name github-action-app github-action-app
