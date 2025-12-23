@@ -1,20 +1,19 @@
 <!--
 Version: v1
 Design, Author, Updated by: Girish Subramanya <girish.subramanya@daimlertruck.com>, VCP, B&I, DTICI
-Date: 2025-12-23
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Actions Generator</title>
+    <title>GitHub Workflow Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <h1>GitHub Actions Generator</h1>
+        <h1>GitHub Workflow Generate</h1>
 
         <div class="tab-controls">
             <button class="tab-btn active" data-tab="tab-editor">Editor</button>
@@ -42,7 +41,6 @@ Date: 2025-12-23
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="pull_request">Pull Request</div>
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="workflow_dispatch">Workflow Dispatch</div>
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="schedule">Schedule</div>
-                    <div class="draggable-item" draggable="true" data-type="env">Environment Variables</div>
                 </div>
 
                 <div class="toolbox-section">
@@ -79,11 +77,6 @@ Date: 2025-12-23
                     <div class="drop-zone" id="triggers-zone">
                         <div class="zone-label">Drop Triggers Here</div>
                         <!-- Triggers will be dropped here -->
-                    </div>
-
-                    <div class="drop-zone" id="env-zone">
-                        <div class="zone-label">Drop Environment Variables Here</div>
-                        <!-- Env vars block will be dropped here -->
                     </div>
 
                     <div class="drop-zone" id="jobs-zone">

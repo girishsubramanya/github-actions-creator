@@ -1,7 +1,6 @@
 /*
 Version: v1
 Design, Author, Updated by: Girish Subramanya <girish.subramanya@daimlertruck.com>, VCP, B&I, DTICI
-Date: 2025-12-23
 */
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Script loaded - v3");
@@ -612,7 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <input type="text" id="prop-trigger-cron" value="${cron}" placeholder="30 5 * * 1,3">
                             <small style="color:#666; font-size:10px;">
                                 POSIX cron syntax: minute hour day month day-of-week<br>
-                                e.g., '30 5 * * 1,3' = at 5:30 on Mon and Wed, in UTC time format
+                                e.g., '30 5 * * 1,3' = at 5:30 on Mon and Wed, Time in UTC
                             </small>
                         </div>
                     `;
