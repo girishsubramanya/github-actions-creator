@@ -42,6 +42,7 @@ Date: 2025-12-23
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="pull_request">Pull Request</div>
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="workflow_dispatch">Workflow Dispatch</div>
                     <div class="draggable-item" draggable="true" data-type="trigger" data-value="schedule">Schedule</div>
+                    <div class="draggable-item" draggable="true" data-type="env">Environment Variables</div>
                 </div>
 
                 <div class="toolbox-section">
@@ -78,6 +79,11 @@ Date: 2025-12-23
                     <div class="drop-zone" id="triggers-zone">
                         <div class="zone-label">Drop Triggers Here</div>
                         <!-- Triggers will be dropped here -->
+                    </div>
+
+                    <div class="drop-zone" id="env-zone">
+                        <div class="zone-label">Drop Environment Variables Here</div>
+                        <!-- Env vars block will be dropped here -->
                     </div>
 
                     <div class="drop-zone" id="jobs-zone">
