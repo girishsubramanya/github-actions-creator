@@ -1,7 +1,6 @@
 """
 Version: v1
 Design, Author, Updated by: Girish Subramanya <girish.subramanya@daimlertruck.com>, VCP, B&I, DTICI
-Date: 2025-12-23
 """
 from flask import Flask, render_template, request, jsonify
 import yaml
