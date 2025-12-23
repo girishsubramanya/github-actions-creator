@@ -612,7 +612,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <input type="text" id="prop-trigger-cron" value="${cron}" placeholder="30 5 * * 1,3">
                             <small style="color:#666; font-size:10px;">
                                 POSIX cron syntax: minute hour day month day-of-week<br>
-                                e.g., '30 5 * * 1,3' = at 5:30 on Mon and Wed
+                                e.g., '30 5 * * 1,3' = at 5:30 on Mon and Wed, in UTC time format
                             </small>
                         </div>
                     `;
