@@ -1,3 +1,5 @@
+This is the first version without the authentication. The working one is applied with TAG v1. Next version with auth will be in github-action-generate
+
 # GitHub Workflow Generator
 
 A visual drag-and-drop tool to generate GitHub Actions workflows, built with Flask.
